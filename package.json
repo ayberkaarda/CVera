@@ -1,0 +1,14 @@
+{
+  "name": "cvera",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "screenshots": "playwright test screenshots",
+    "previews": "node scripts/capture-portfolio-previews.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0"
+  }
+}

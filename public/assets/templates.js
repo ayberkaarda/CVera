@@ -1,0 +1,28 @@
+// Stable identifiers preserve saved CVs when presentation names change.
+export const layouts = [
+  {id:'classic',name:'Pusula',variant:'classic',accent:'#303842',font:'Georgia,serif',description:'Ortalanmış başlık ve sade tek sütun.',photo:'center'},
+  {id:'technology',name:'Gece',variant:'sidebar-dark',accent:'#334758',font:'Arial,sans-serif',description:'Koyu yan panel ve dengeli iki sütun.',columns:2,photo:'side'},
+  {id:'modern',name:'Rota',variant:'modern',accent:'#2863bd',font:'Arial,sans-serif',description:'Mavi üst çizgi ve güçlü başlıklar.',photo:'left'},
+  {id:'minimal',name:'Duru',variant:'minimal',accent:'#46505a',font:'Arial,sans-serif',description:'Geniş beyaz alan ve açık hiyerarşi.',photo:'right'},
+  {id:'executive',name:'Zirve',variant:'executive',accent:'#263442',font:'Georgia,serif',description:'Koyu başlık bandı ve kurumsal tipografi.',photo:'right'},
+  {id:'creative',name:'Frekans',variant:'sidebar-violet',accent:'#753bc6',font:'Arial,sans-serif',description:'Mor yan panel ve canlı bölüm vurguları.',columns:2,photo:'side'},
+  {id:'professional',name:'Devre',variant:'technical',accent:'#227bb3',font:'Arial,sans-serif',description:'Kompakt teknik düzen ve mavi şerit.',photo:'center'},
+  {id:'swiss',name:'Izgara',variant:'swiss',accent:'#c54b3c',font:'Arial,sans-serif',description:'Asimetrik başlık ve belirgin çizgiler.',photo:'left'},
+  {id:'focus',name:'Cep',variant:'compact',accent:'#39424b',font:'Arial,sans-serif',description:'Alanı verimli kullanan sıkı satır aralıkları.',photo:'center'},
+  {id:'academic',name:'Kürsü',variant:'academic',accent:'#434b59',font:'Georgia,serif',description:'Serif başlıklar ve ortalanmış akademik profil.',photo:'center'},
+  {id:'studio',name:'Spektrum',variant:'sidebar-gradient',accent:'#7547cf',font:'Arial,sans-serif',description:'Geçişli yan panel ve açık özet bloğu.',columns:2,photo:'side'},
+  {id:'berlin',name:'Editör',variant:'editorial',accent:'#8d7560',font:'Georgia,serif',description:'Krem kâğıt ve editoryal boşluklar.',photo:'right'},
+  {id:'mono',name:'Kontrast',variant:'contrast',accent:'#ed5c20',font:'Arial,sans-serif',description:'Siyah başlık ve geometrik turuncu detay.',photo:'center'},
+  {id:'simple',name:'Esinti',variant:'nordic',accent:'#568476',font:'Arial,sans-serif',description:'İnce yeşil çizgiler ve sakin anlatım.',photo:'right'},
+  {id:'linear',name:'İzlek',variant:'timeline',accent:'#297b9c',font:'Arial,sans-serif',description:'Noktalı zaman çizgisiyle bölüm akışı.',photo:'right'},
+  {id:'atlas',name:'Beton',variant:'sidebar-light',accent:'#5a6878',font:'Arial,sans-serif',description:'Açık gri yan panel ve kurumsal görünüm.',columns:2,photo:'side'},
+  {id:'horizon',name:'İnci',variant:'gold',accent:'#a28247',font:'Georgia,serif',description:'Serif tipografi ve ince altın çizgiler.',photo:'center'},
+  {id:'ember',name:'Kor',variant:'sidebar-amber',accent:'#e6a71d',font:'Arial,sans-serif',description:'Grafit panel ve kehribar geometrik vurgular.',columns:2,photo:'side'},
+  {id:'garden',name:'Filiz',variant:'sidebar-sage',accent:'#668a74',font:'Arial,sans-serif',description:'Adaçayı panel ve ana sütunda zaman çizgisi.',columns:2,photo:'side'},
+  {id:'petal',name:'Gonca',variant:'bloom',accent:'#c5854c',font:'Arial,sans-serif',description:'Sıcak kâğıt ve yuvarlak bölüm etiketleri.',photo:'right'},
+  {id:'navy',name:'Derin',variant:'navy',accent:'#183653',font:'Arial,sans-serif',description:'Lacivert başlık ve keskin tipografi.',photo:'right'},
+  {id:'clay',name:'Kıyı',variant:'terra',accent:'#ac715a',font:'Arial,sans-serif',description:'Toprak tonları ve ferah içerik kartları.',photo:'right'},
+  {id:'banner',name:'Sancak',variant:'ribbon',accent:'#e25430',font:'Arial,sans-serif',description:'Çentikli isim bandı ve açık içerik gövdesi.',photo:'right'},
+  {id:'numbered',name:'Dizin',variant:'indexed',accent:'#3d4c60',font:'Arial,sans-serif',description:'Numaralı bölümler ve ince ayırıcılar.',photo:'right'},
+  {id:'split',name:'Kesişim',variant:'duo',accent:'#4359bb',font:'Arial,sans-serif',description:'İki parçalı başlık ve tek sütunlu gövde.',photo:'right'}
+];
