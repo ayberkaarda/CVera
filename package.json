@@ -1,5 +1,6 @@
 {
   "name": "cvera",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,5 +11,8 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.56.0"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }

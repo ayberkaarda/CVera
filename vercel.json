@@ -1,0 +1,39 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "public",
+  "buildCommand": "",
+  "installCommand": "",
+  "regions": ["fra1"],
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.9.0",
+      "maxDuration": 300
+    }
+  },
+  "routes": [
+    {"src": "/assets/(.*)", "dest": "/assets/$1"},
+    {"src": "/downloads/(.*)", "dest": "/downloads/$1"},
+    {"src": "/(robots\\.txt|favicon\\.ico)", "dest": "/$1"},
+    {"src": "/(.*)", "dest": "/api/index.php"}
+  ],
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "false",
+    "APP_URL": "https://cvera-pi.vercel.app",
+    "APP_LOCALE": "tr",
+    "LOG_CHANNEL": "stderr",
+    "SESSION_DRIVER": "cookie",
+    "SESSION_SECURE_COOKIE": "true",
+    "SESSION_ENCRYPT": "true",
+    "CACHE_STORE": "database",
+    "DB_CONNECTION": "pgsql",
+    "DB_SSLMODE": "require",
+    "QUEUE_CONNECTION": "sync",
+    "APP_CONFIG_CACHE": "/tmp/cvera-config.php",
+    "APP_EVENTS_CACHE": "/tmp/cvera-events.php",
+    "APP_PACKAGES_CACHE": "/tmp/cvera-packages.php",
+    "APP_SERVICES_CACHE": "/tmp/cvera-services.php",
+    "APP_ROUTES_CACHE": "/tmp/cvera-routes.php"
+  }
+}

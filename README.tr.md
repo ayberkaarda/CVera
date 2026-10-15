@@ -1,5 +1,7 @@
 # CVera
 
+Canlı site: [cvera-pi.vercel.app](https://cvera-pi.vercel.app).
+
 **Daha net başvurular için ücretsiz CV çalışma alanı.** Laravel ve animasyonlu, interaktif Three.js arayüzüyle geliştirildi.
 
 [English · Ana README](README.md) · [Türkçe](README.tr.md)
@@ -157,7 +159,7 @@ Orijinal dosya ve görseller tarayıcıda işlenir. Çıkarılan metin analiz i�
 
 ## Canlı ortam
 
-Web sunucusunun kökünü public/ yap. APP_ENV=production, APP_DEBUG=false ve doğru HTTPS APP_URL değerlerini ayarla; sunucuna uygun güvenli çerez ve proxy yapılandırmasını yap. storage/ ile bootstrap/cache yazılabilir olmalı; veritabanını yedekle, migration ve Laravel önbellek komutlarını çalıştır. .env dosyasını veya proje kökünü internete açma. Canlı ortamda artisan serve yerine uygun web sunucusu/PHP-FPM kullan. Bu çalışma kapsamında canlıya dağıtım yapılmadı.
+Web sunucusunun kökünü public/ yap. APP_ENV=production, APP_DEBUG=false ve doğru HTTPS APP_URL değerlerini ayarla; sunucuna uygun güvenli çerez ve proxy yapılandırmasını yap. storage/ ile bootstrap/cache yazılabilir olmalı; veritabanını yedekle, migration ve Laravel önbellek komutlarını çalıştır. .env dosyasını veya proje kökünü internete açma. Canlı ortamda artisan serve yerine uygun web sunucusu/PHP-FPM kullan. Canlı dağıtım: https://cvera-pi.vercel.app (Vercel + Neon PostgreSQL).
 
 İsteğe bağlı hesaplar için e-posta doğrulama, parola sıfırlama e-postası, canlı e-posta servisi ve mağaza yayını yapılandırılmadı. Ödeme entegrasyonu bulunmaz.
 
@@ -176,3 +178,7 @@ docs/                              Kapsam, doğrulama ve ekran görüntüleri
 ~~~
 
 Üçüncü taraf bağımlılıkları kendi lisanslarını korur: [üçüncü taraf notları](docs/THIRD_PARTY.md). İşlevsel referans [PratikCV](https://pratikcv.net/)’dir; site kimliği özgündür; CV ve portfolyo yerleşimleri, kullanıcının sağladığı görsel referanslara farklı şablon isimleriyle uyarlanmıştır. Kullanıcının [LearnToPoker](https://learntopoker.vercel.app/) sitesi yalnızca etkileşim ve animasyon seviyesi için referans alınmıştır; görsel tasarım için kullanılmamıştır.
+
+## Lisans
+
+[MIT](LICENSE) © 2026 Ayberk Arda. Üçüncü taraf varlıklar kendi lisanslarını korur.

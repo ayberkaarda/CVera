@@ -63,6 +63,9 @@
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
+        ],
+        "vercel": [
+            "@php scripts/vercel-build.php"
         ]
     },
     "extra": {

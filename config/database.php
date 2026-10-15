@@ -3,6 +3,11 @@
 use Illuminate\Support\Str;
 use Pdo\Mysql;
 
+$postgresUrl = env('DB_URL', env('DATABASE_URL'));
+$postgresHost = parse_url($postgresUrl ?? '', PHP_URL_HOST) ?: '';
+$neonEndpoint = str_ends_with($postgresHost, '.neon.tech')
+    ? str_replace('-pooler', '', explode('.', $postgresHost)[0]) : null;
+
 return [
 
     /*
@@ -86,7 +91,8 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('DB_URL'),
+            'url' => $postgresUrl,
+            'neon_endpoint' => $neonEndpoint,
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'laravel'),

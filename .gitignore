@@ -29,3 +29,9 @@ Thumbs.db
 
 /CV Tasarımları _ PratikCV.pdf
 /Portfolyo Tasarımları _ PratikCV.pdf
+
+.vercel
+.env*
+!.env.example
+/.agents/
+/skills-lock.json

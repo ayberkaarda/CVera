@@ -1,5 +1,7 @@
 # CVera
 
+Live website: [cvera-pi.vercel.app](https://cvera-pi.vercel.app).
+
 **A free CV workspace for clearer applications.** Built with Laravel and an animated, interactive Three.js frontend.
 
 [English](README.md) · [Türkçe](README.tr.md)
@@ -157,7 +159,7 @@ Original files and images are processed in the browser. Extracted text is sent t
 
 ## Production
 
-Point the web server to public/. Set APP_ENV=production, APP_DEBUG=false and the correct HTTPS APP_URL; configure secure cookies and trusted proxies for your host. Make storage/ and bootstrap/cache writable, back up the database, and run migrations and Laravel deployment caches. Never expose .env or serve the repository root. Use a proper web server/PHP-FPM rather than artisan serve. This repository has not been deployed as part of the task.
+Point the web server to public/. Set APP_ENV=production, APP_DEBUG=false and the correct HTTPS APP_URL; configure secure cookies and trusted proxies for your host. Make storage/ and bootstrap/cache writable, back up the database, and run migrations and Laravel deployment caches. Never expose .env or serve the repository root. Use a proper web server/PHP-FPM rather than artisan serve. Vercel deployment uses vercel.json and api/index.php, encrypted cookie sessions, and persistent Neon PostgreSQL. Set APP_KEY and DATABASE_URL in Vercel; Composer runs migrations during deployment.
 
 Optional account email verification, password-reset email, production mail delivery, and store publication are not configured. There is no billing integration.
 
@@ -176,3 +178,7 @@ docs/                              Feature coverage, verification, screenshots
 ~~~
 
 Third-party dependencies retain their respective licenses; see [third-party notices](docs/THIRD_PARTY.md). Functional reference: [PratikCV](https://pratikcv.net/). The site identity is original; CV and portfolio layouts follow the user-supplied design references with distinct template names. The author’s [LearnToPoker](https://learntopoker.vercel.app/) is an interaction/animation reference only, not a visual design reference.
+
+## License
+
+[MIT](LICENSE) © 2026 Ayberk Arda. Third-party assets retain their own licenses.
